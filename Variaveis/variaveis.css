@@ -1,0 +1,63 @@
+ :root {
+   --cor-principal: #3498db;
+   --cor-secundaria: #7391b0;
+   --cor-fundo: #ecf0f1;
+   --cor-texto: #333;
+   --cor-branca: #fff;
+   --cor-preta: #000;
+
+   --fonte-principal: 'Arial', sans-serif;
+
+   --border-radius: 10px;
+   --sombra: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+}
+
+p {
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background: #0e1a2b;
+}
+
+.caixa {
+    background-color: var(--cor-branca);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--sombra);
+    text-align: center;
+    width: 300px;
+}
+
+button {
+        background-color: var(--cor-principal);
+        color: white;
+        border: none;
+        border-radius: var(--border-radius);
+        padding: 10px 20px;
+        cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+    transition: ease-in-out 0.3s;
+    transition: ease-in 0.3s;
+}
+
